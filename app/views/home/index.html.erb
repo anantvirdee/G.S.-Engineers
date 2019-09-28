@@ -1,2 +1,23 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div id="circle" class="green"></div>
+<div id="square1" class="green">yo</div> 
+<div id="square" class="red"></div>
+<iframe src="/about.html"></iframe>
+
+<script>
+    $("#circle").click(function(){
+        $("#square1").html("chako change");
+        $("iframe").attr("src","/contact.html");
+        $(this).css("width","400px");
+        $(this).fadeOut("slow", function(){
+              alert("chak!")
+          }); 
+    });
+    $("#square1").hover(function(){
+        $(this).animate({
+            width:"300px",
+            height:"300px"
+        },2000);
+    });
+       
+    
+</script>

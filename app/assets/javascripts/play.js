@@ -1,0 +1,3 @@
+function chako(){
+    alert('Chako!');
+};
